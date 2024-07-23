@@ -3,8 +3,6 @@ SpiceUp is a recipe application that allows users to discover, save, and share t
 
 Features
 Recipe Discovery: Browse through a collection of recipes.
-Save Recipes: Save your favorite recipes to access them later.
-Recipe Sharing: Share recipes with friends and family.
 Responsive Design: Fully responsive and optimized for various devices.
 Technologies Used
 React: For building the user interface and managing state.
