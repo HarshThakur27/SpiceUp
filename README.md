@@ -1,4 +1,4 @@
-SpiceUp - Recipe Application
+
 SpiceUp is a recipe application that allows users to discover, save, and share their favorite recipes. Built with React, Tailwind CSS, and Vercel, this project showcases a modern approach to recipe management and user interaction.
 
 Features
