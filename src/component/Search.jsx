@@ -54,6 +54,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Recipe from './Recipe';
+import chef from "../images/chef.webp";
 
 const Search = () => {
   const [searchData, setSearchData] = useState({
@@ -88,10 +89,12 @@ const Search = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-4">Search Recipes</h1>
+    <div className="container bg-black w-full h-[600px] overflow-y-scroll mx-auto p-4  ">
+     
+      {/* <h1 className="text-3xl font-bold text-center mb-4">Search Recipes</h1> */}
       <div className="mb-8">
-        <form onSubmit={handleSearch} className="flex flex-col items-center space-y-4">
+      
+        <form onSubmit={handleSearch} className="flex flex-col items-center space-y-4 ">
           <label className="w-full max-w-lg">
             <p className="text-xl mb-2">Search</p>
             <input
@@ -112,7 +115,7 @@ const Search = () => {
         </form>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
         {recipeData && recipeData.map((recipe) => (
           <Recipe key={recipe.idMeal} recipe={recipe} />
         ))}

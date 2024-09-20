@@ -14,26 +14,26 @@ const Full = () => {
   }
 
   return (
-    <div className="container mx-auto p-8 bg-gray-100 rounded-lg shadow-lg">
+    <div className=" mx-auto p-8 bg-black rounded-lg shadow-lg">
       <h1 className="text-5xl font-bold mb-6 text-center text-yellow-600">{recipe.strMeal}</h1>
       <div className="flex justify-center mb-8">
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
-          className="w-full max-w-2xl rounded-lg shadow-lg border-4 border-yellow-500"
+          className="w-full h-[300px] max-w-2xl rounded-lg shadow-lg border-4 border-yellow-500"
         />
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-md mb-8">
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md mb-8">
         <h2 className="text-3xl font-semibold text-yellow-600 mb-4">Instructions</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">{recipe.strInstructions}</p>
+        <p className="text-lg text-white leading-relaxed">{recipe.strInstructions}</p>
       </div>
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-gray-700 p-6 rounded-lg shadow-md">
         <h2 className="text-3xl font-semibold text-yellow-600 mb-4">Ingredients</h2>
         <ul className="list-disc list-inside pl-5 space-y-2">
           {Object.keys(recipe)
             .filter((key) => key.startsWith('strIngredient') && recipe[key])
             .map((key) => (
-              <li key={key} className="text-gray-700 text-lg">
+              <li key={key} className="text-white text-lg">
                 {recipe[key]}
               </li>
             ))}

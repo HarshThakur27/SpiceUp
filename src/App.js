@@ -21,6 +21,7 @@ function App() {
       <Route path="/recipe" element={<Recipe/>}/>
       <Route path="/full" element={<Full/>}/>
     </Routes>
+    
     <Footer/>
     </div>
      
