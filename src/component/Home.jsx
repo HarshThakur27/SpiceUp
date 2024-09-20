@@ -61,18 +61,20 @@ const Home = () => {
                 </button>
               </a>
             </div>
-          <video
-              ref={videoRef}
-              className='w-full'
-              controls
-              muted
-              autoPlay
-              onEnded={handleVideoEnd}
-              key={videoSources[currentVideoIndex]}
-            >
-              <source src={videoSources[currentVideoIndex]} type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
+         <video
+  ref={videoRef}
+  className='w-full'
+  muted
+  autoPlay
+  onEnded={handleVideoEnd}
+  key={videoSources[currentVideoIndex]}
+  disablePictureInPicture
+  controlsList="nodownload nofullscreen noremoteplayback" // Disables fullscreen, downloading, and remote playback
+>
+  <source src={videoSources[currentVideoIndex]} type="video/webm" />
+  Your browser does not support the video tag.
+</video>
+
 
           </div>
         </div>
