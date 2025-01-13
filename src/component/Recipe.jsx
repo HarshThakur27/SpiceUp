@@ -20,12 +20,17 @@
 
 // export default Recipe;
 
+
+
+
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Recipe = ({ recipe }) => {
   return (
-    <div className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
+    <div className="bg-black  rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer">
       <Link to="/full" state={{ recipe }}>
         <img src={recipe.strMealThumb} alt={recipe.strMeal} className="w-full  text-yellow-700  h-48 object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
