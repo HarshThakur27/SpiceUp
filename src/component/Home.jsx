@@ -48,20 +48,20 @@ const Home = () => {
       <section className='w-full h-full bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-200'>
         <div className='relative'>
           <div>
-            <div className='w-full md:w-[500px] h-[400px] absolute z-40 rounded-3xl border-yellow-500 animate-reveal opacity-0 md:ml-16 md:mt-36 p-4 md:p-0'>
-              <h1 className='text-2xl md:text-3xl pr-11 font-bold text-yellow-600 text-center md:pl-24'>Welcome to SpiceUp</h1>
-              <p className='pt-4 pl-16 text-sm md:text-xl text-white text-center md:text-left'>
+            <div className='lg:w-full lg:max-w-[45vw] max-w-[65vw] mt-8 w-full h-[35vh] sm:min-w-[640px]  sm:mt-12 sm:h[300px] md:w-[30vw] lg:h-[400px] absolute z-40 rounded-3xl border-yellow-500 animate-reveal opacity-0 md:ml-16 md:mt-36 p-4 md:p-0'>
+              <h1 className='lg:text-3xl text-xs md:text-2xl pr-11 font-bold text-yellow-600 text-center '>Welcome to SpiceUp</h1>
+              <p className='pt-2 lg:pl-16 text-[9px] lg:text-md md:text-lg text-white lg:text-center md:text-left'>
               "Discover a world of flavors with our curated recipes. Whether you're a seasoned chef or just starting out,
             we have something delicious for everyone. From quick weeknight dinners to indulgent weekend feasts,
             explore an array of dishes that will tantalize your taste buds and elevate your cooking skills."
               </p>
               <a href="#explore">
-                <button className='w-full ml-16 md:w-[400px] h-[50px] bg-white text-yellow-400 mt-6 rounded-2xl text-lg md:text-xl font-bold'>
+                <button className='w-full lg:ml-56 max-w-[20vw] h-[4vh] text-[10px]  ml-8 sm:w-[200px] md:w-[200px] lg:h-[50px] md:h-[30px] bg-white text-yellow-400 mt-3 rounded-2xl lg:text-lg md:text-lg md:ml-56 font-semibold'>
                   Start Exploring
                 </button>
               </a>
             </div>
-         <video
+            <video
   ref={videoRef}
   className='w-full'
   muted
@@ -75,29 +75,28 @@ const Home = () => {
   Your browser does not support the video tag.
 </video>
 
-
           </div>
         </div>
       </section>
 
       {/* Discover Delicious Recipes Section */}
       <section className="bg-stone-950">
-        <div className='flex flex-col md:flex-row w-full md:w-[1300px] justify-items-end items-center md:items-stretch p-4'>
+        <div className='flex flex-col md:flex-row w-full  justify-items-end items-center md:items-stretch p-4'>
           <div className='w-full md:w-[750px] h-full'>
             <h2 className="text-3xl md:text-6xl font-bold text-gray-800 mb-6 text-center md:text-left">
               Discover Delicious Recipes
             </h2>
-            <h3 className='text-white text-sm md:text-xl w-full md:w-[600px] mt-6 md:mt-24 font-bold text-center md:text-left'>
+            <h3 className='text-white text-sm md:text-xl w-full md:w-[200px] mt-6 md:mt-24 font-bold text-center md:text-left'>
               "Food is more than just nourishment—it's an experience that brings people together."
             </h3>
             <Link to="/search">
-              <button className='w-full md:w-[250px] h-[50px] mt-7 md:ml-11 text-lg md:text-xl rounded-3xl bg-yellow-400 text-white font-bold'>
+              <button className='w-full md:w-[200px] h-[50px] mt-7 md:ml-11 text-lg md:text-xl rounded-3xl bg-yellow-400 text-white font-bold'>
                 Search now
               </button>
             </Link>
           </div>
           <img src="https://aspiremagz.com/wp-content/uploads/2023/10/Chef-Ranveer-Brar-kashkan-scaled.jpg" alt="ranveer"
-            className='w-full md:w-[550px] h-full mt-6 md:mt-0' />
+            className='w-full md:w-[500px] h-full mt-6 md:mt-0' />
         </div>
 
         <div className='m-11'>
@@ -147,6 +146,8 @@ const Home = () => {
 };
 
 export default Home;
+
+
 
 
 
