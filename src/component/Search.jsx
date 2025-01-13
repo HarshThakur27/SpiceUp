@@ -127,9 +127,15 @@ return (
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {recipeData &&
-        recipeData.map((recipe) => <Recipe key={recipe.idMeal} recipe={recipe} />)}
-    </div>
+  {recipeData && recipeData.length > 0 ? (
+    recipeData.map((recipe) => <Recipe key={recipe.idMeal} recipe={recipe} />)
+  ) : (
+    <p className="text-center col-span-full text-gray-500 text-lg">
+      Recipe not found. Try searching for something else!
+    </p>
+  )}
+</div>
+
        
 
        <h2 className='text-center font-bold text-3xl mb-3 mt-5 text-white'>Recipes Tailored for You!</h2>
@@ -172,3 +178,4 @@ return (
 };
 
 export default Search;
+
