@@ -14,8 +14,8 @@ const Full = () => {
   }
 
   return (
-    <div className=" mx-auto p-8 bg-black rounded-lg shadow-lg">
-      <h1 className="text-5xl font-bold mb-6 text-center text-yellow-600">{recipe.strMeal}</h1>
+    <div className=" mx-auto   p-8 bg-black rounded-lg shadow-lg">
+      <h1 className="text-4xl  mt-7 font-bold mb-6 text-center text-yellow-600">{recipe.strMeal}</h1>
       <div className="flex justify-center mb-8">
         <img
           src={recipe.strMealThumb}
