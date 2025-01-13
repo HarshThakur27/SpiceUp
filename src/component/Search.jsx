@@ -52,6 +52,9 @@
 
 
 
+
+
+
 import React, { useState, useEffect } from 'react';
 import Recipe from './Recipe';
 import chef from "../images/chef.webp";
@@ -127,12 +130,14 @@ return (
       {recipeData &&
         recipeData.map((recipe) => <Recipe key={recipe.idMeal} recipe={recipe} />)}
     </div>
+       
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+       <h2 className='text-center font-bold text-3xl mb-3 mt-5 text-white'>Recipes Tailored for You!</h2>
+    <div className="grid bg-black  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
       {recipes.map((recipe) => (
         <div
           key={recipe.idMeal}
-          className="bg-black rounded-lg shadow-lg overflow-hidden relative transition-transform transform hover:scale-105 cursor-pointer"
+          className="bg-black border-[1px]  border-gray-700 rounded-lg shadow-lg overflow-hidden relative transition-transform transform hover:scale-105 cursor-pointer"
         >
           <Link to="/full" state={{ recipe }}>
             <div className="relative">
